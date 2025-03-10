@@ -12,7 +12,7 @@ const [errMsg, setErrMsg] = useState('');
             const response = await yelp.get('/search',{
                 params: {
                     limit: 50,
-                    term: 'searchTerm',
+                    term: searchTerm,
                     location: 'san josh'
                 }
             });
